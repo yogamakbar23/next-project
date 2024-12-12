@@ -1,5 +1,6 @@
 "use client";
 import { NoteBlank } from "@phosphor-icons/react";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -10,12 +11,12 @@ const Page = () => {
         404 Not Found
       </div>
       <p>This page is not available</p>
-      <a
+      <Link
         href="/"
         className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition "
       >
         Back to main page
-      </a>
+      </Link>
     </div>
   );
 };

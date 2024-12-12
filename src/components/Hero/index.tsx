@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <section
@@ -19,18 +21,18 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="mt-8 flex space-x-4 ">
-          <a
+          <Link
             href="#"
             className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition "
           >
             Get Started
-          </a>
-          <a
+          </Link>
+          <Link
             href="/about"
             className="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
