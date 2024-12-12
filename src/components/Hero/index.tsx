@@ -8,9 +8,9 @@ const Hero = () => {
         backgroundImage: 'url("/images/hero_background2.jpg")', // Ganti dengan path gambar Anda
       }}
     >
-      <div className="container mx-auto px-36 py-60">
+      <div className="container mx-auto px-4 lg:px-36 py-60">
         {/* Heading */}
-        <h1 className="text-4xl font-bold md:text-6xl drop-shadow-lg">
+        <h1 className="font-bold text-6xl drop-shadow-lg">
           Welcome to <span className="text-blue-500">Notulensi</span>
         </h1>
 

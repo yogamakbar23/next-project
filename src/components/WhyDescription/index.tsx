@@ -1,6 +1,6 @@
 const WhyDescription = () => {
   return (
-    <section className="-mt-8 ">
+    <section className="-mt-8 px-4">
       <div className="max-w-4xl px-10 py-10 bg-gray-700 rounded-2xl">
         <h2 className="text-3xl font-bold mb-5">Why Notulensi?</h2>
         <p>
