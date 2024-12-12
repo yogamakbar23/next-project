@@ -1,7 +1,5 @@
 "use client";
 
-import { HardDrives } from "@phosphor-icons/react";
-
 const Networks = () => {
   const networks = [
     {
