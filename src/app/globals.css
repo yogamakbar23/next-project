@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: rgb(13, 19, 33);
+  --foreground: #ffffff;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 1152px;
+  padding: 55px 20px;
+}
+
+.loading {
+  --d: 44px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: #766df4;
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
+    calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 2px,
+    calc(0 * var(--d)) calc(1 * var(--d)) 0 4px,
+    calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 6px,
+    calc(-1 * var(--d)) calc(0 * var(--d)) 0 8px,
+    calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 10px,
+    calc(0 * var(--d)) calc(-1 * var(--d)) 0 12px;
+  animation: s7 0.5s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
