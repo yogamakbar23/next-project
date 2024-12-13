@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { CurrencyBtc, DotsThreeOutlineVertical } from "@phosphor-icons/react";
+import Image from "next/image";
+import { DotsThreeOutlineVertical } from "@phosphor-icons/react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -12,14 +13,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" bg-gray-900 fixed top-0 left-0 w-full z-50 text-white shadow-md border-b border-white/12">
+    <nav className=" bg-zinc-950 fixed top-0 left-0 w-full z-50 text-white shadow-md border-b border-white/12">
       <div className="container mx-auto max-w-screen-xl px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
-        <Link href={"/"} className="flex text-3xl font-bold items-center gap-2">
-          <div className="flex w-10 h-10 bg-blue-500 rounded-full text-white justify-center items-center">
-            <CurrencyBtc size={28} />
+        <Link href={"/"} className="flex text-3xl font-bold items-center ">
+          <div className="flex w-15 h-15 ">
+            <Image
+              src="/images/logo.svg" // Path ke ikon Anda
+              alt="Kyronode Logo"
+              width={60}
+              height={60}
+              className="rounded-full" // Tambahkan styling jika perlu
+            />
           </div>
-          Notulensi
+          <p className="-ml-3">yronode</p>
         </Link>
         {/* Links */}
         <ul className="hidden lg:flex space-x-4 text-xl text-gray-300">

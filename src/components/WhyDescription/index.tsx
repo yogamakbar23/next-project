@@ -1,8 +1,8 @@
 const WhyDescription = () => {
   return (
     <section className="-mt-8 px-4">
-      <div className="max-w-4xl px-10 py-10 bg-gray-700 rounded-2xl">
-        <h2 className="text-3xl font-bold mb-5">Why Notulensi?</h2>
+      <div className="max-w-4xl px-10 py-10 bg-zinc-700 rounded-2xl">
+        <h2 className="text-3xl font-bold mb-5">Why Kyronode?</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

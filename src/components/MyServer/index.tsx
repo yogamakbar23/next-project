@@ -57,19 +57,19 @@ const MyServer = () => {
     <section>
       <div className="content">
         <h2 className="text-3xl font-bold">My Server</h2>
-        <div className="flex bg-gray-300 h-px my-5"></div>
+        <div className="flex bg-zinc-300 h-px my-5"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  ">
           {servers.map((server) => (
             <div
               key={server.id}
-              className="flex flex-col bg-gray-700 text-center justify-center items-center p-6 rounded-lg shadow-md transition hover:scale-105"
+              className="flex flex-col bg-zinc-700 text-center justify-center items-center p-6 rounded-lg shadow-md transition hover:scale-105"
             >
               <HardDrives size={62} />
               <h3 className="text-xl font-semibold mb-2">{server.name}</h3>
-              <p className="text-gray-300">CPU: {server.cpu}</p>
-              <p className="text-gray-300">RAM: {server.ram}</p>
-              <p className="text-gray-300">Storage: {server.storage}</p>
-              <p className="text-gray-300">Bandwith: {server.bandwith}</p>
+              <p className="text-zinc-300">CPU: {server.cpu}</p>
+              <p className="text-zinc-300">RAM: {server.ram}</p>
+              <p className="text-zinc-300">Storage: {server.storage}</p>
+              <p className="text-zinc-300">Bandwith: {server.bandwith}</p>
             </div>
           ))}
         </div>

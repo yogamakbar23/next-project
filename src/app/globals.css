@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: rgb(13, 19, 33);
+  --background: rgb(24 24 27);
   --foreground: #ffffff;
 }
 /* 
@@ -36,7 +36,7 @@ section {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  color: #766df4;
+  color: rgb(245 158 11);
   box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
     calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 2px,
     calc(0 * var(--d)) calc(1 * var(--d)) 0 4px,

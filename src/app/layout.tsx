@@ -4,8 +4,8 @@ import { Gabarito } from "next/font/google";
 const gabarito = Gabarito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Notulensi",
-  description: "Website Krypto No.1 di Indonesia",
+  title: "Kyronode",
+  description: "Supporting Decentralized Networks with Reliable Infrastructure",
 };
 
 interface RootLayoutProps {
@@ -15,6 +15,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon.ico" />
+      </head>
       <body
         className={`${gabarito.className} bg-color-dark`}
         suppressHydrationWarning={true}
