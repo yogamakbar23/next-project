@@ -8,7 +8,7 @@ import WhyDescription from "@/components/WhyDescription";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-zinc-100 text-black dark:text-white dark:bg-zinc-900">
       <Navbar />
       <Hero />
       <WhyDescription />
@@ -16,6 +16,6 @@ export default function Home() {
       <MyServer />
       <Networks />
       <Footer />
-    </>
+    </div>
   );
 }

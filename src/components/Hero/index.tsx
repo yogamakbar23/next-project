@@ -16,7 +16,7 @@ const Hero = () => {
             Wellcome to
           </h1>
           <div>
-            <h1 className="write text-amber-500 font-bold text-6xl md:text-7xl drop-shadow-lg">
+            <h1 className="write text-amber-300 dark:text-amber-500 font-bold text-6xl md:text-7xl drop-shadow-lg">
               Kyronode
             </h1>
           </div>
@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="mt-8 flex space-x-4 ">
           <Link
             href="#"
-            className="px-6 py-3 bg-amber-500 text-black rounded-lg shadow-lg hover:bg-amber-600 transition "
+            className="px-6 py-3 bg-amber-300 dark:bg-amber-500 text-black rounded-lg shadow-lg hover:bg-amber-500 dark:hover:bg-amber-600 transition "
           >
             Get Started
           </Link>

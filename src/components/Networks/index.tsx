@@ -42,19 +42,19 @@ const Networks = () => {
     <section>
       <div className="content">
         <h2 className="text-3xl font-bold">Networks</h2>
-        <div className="flex bg-zinc-300 h-px my-5"></div>
+        <div className="flex bg-zinc-500 dark:bg-zinc-300 h-px my-5"></div>
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4  ">
           {networks.map((network) => (
             <div
               key={network.id}
-              className="flex flex-row gap-4 bg-zinc-800 text-left items-center p-6 rounded-lg shadow-md transition hover:scale-105"
+              className="flex flex-row gap-4 bg-white dark:bg-zinc-800 text-left items-center p-6 rounded-lg shadow-md transition hover:scale-105"
             >
               <Image
                 src={network.image}
                 alt={network.name}
                 width={200}
                 height={200}
-                className="w-10 h-10 object-cover bg-white rounded-full"
+                className="w-10 h-10 object-cover bg-amber-300 dark:bg-white rounded-full"
               />
               <h3 className="text-xl font-semibold ">{network.name}</h3>
             </div>

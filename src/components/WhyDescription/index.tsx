@@ -1,7 +1,7 @@
 const WhyDescription = () => {
   return (
     <section className="-mt-8 px-4 pb-10">
-      <div className="max-w-4xl px-10 py-10 bg-zinc-800 rounded-2xl text-justify">
+      <div className="max-w-4xl px-8 py-10 bg-white dark:bg-zinc-800 rounded-2xl text-justify">
         <h2 className="text-3xl font-bold mb-5">Why Kyronode?</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
