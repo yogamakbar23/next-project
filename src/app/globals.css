@@ -14,6 +14,10 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -28,8 +32,14 @@ section {
 
 .content {
   width: 1152px;
-  padding: 55px 20px;
+  padding: 30px 20px;
 }
+
+.card {
+  background-color: #3c2b3d;
+}
+
+/* Loading animation */
 
 .loading {
   --d: 44px;
@@ -50,5 +60,61 @@ section {
 @keyframes s7 {
   100% {
     transform: rotate(1turn);
+  }
+}
+
+/* Typewriter animation*/
+.typewriter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.typewriter .write {
+  text-align: left;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Adjust as needed */
+  animation: typing 5s steps(30, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter {
+    flex-direction: column;
+  }
+  .typewriter .write {
+    width: fit-content;
+    align-self: flex-start;
+    /* border-right: none;
+    animation: none; */
   }
 }

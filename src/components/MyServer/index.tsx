@@ -62,7 +62,7 @@ const MyServer = () => {
           {servers.map((server) => (
             <div
               key={server.id}
-              className="flex flex-col bg-zinc-700 text-center justify-center items-center p-6 rounded-lg shadow-md transition hover:scale-105"
+              className="flex flex-col text-center justify-center items-center p-6 bg-zinc-800 rounded-lg shadow-md transition hover:scale-105"
             >
               <HardDrives size={62} />
               <h3 className="text-xl font-semibold mb-2">{server.name}</h3>

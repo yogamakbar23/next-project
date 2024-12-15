@@ -5,14 +5,22 @@ const Hero = () => {
     <section
       className="bg-cover bg-center text-white mt-16"
       style={{
-        backgroundImage: 'url("/images/kyro header.png")',
+        backgroundImage:
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/kyro header.png")',
       }}
     >
-      <div className="container mx-auto px-4 lg:px-36 py-60">
+      <div className="flex flex-col justify-center items-center text-center mx-auto px-4 lg:px-36 py-60">
         {/* Heading */}
-        <h1 className="font-bold text-6xl drop-shadow-lg">
-          Welcome to <span className="text-amber-500">Kyronode</span>
-        </h1>
+        <div className="typewriter">
+          <h1 className="md:whitespace-nowrap font-bold text-6xl md:text-7xl drop-shadow-lg">
+            Wellcome to
+          </h1>
+          <div>
+            <h1 className="write text-amber-500 font-bold text-6xl md:text-7xl drop-shadow-lg">
+              Kyronode
+            </h1>
+          </div>
+        </div>
 
         {/* Subtitle */}
         <p className="mt-4 text-lg md:text-xl text-zinc-300 drop-shadow-lg">
