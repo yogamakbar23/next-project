@@ -35,7 +35,7 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Image
             className="h-auto w-full rounded object-cover"
-            src="/images/20241205_230918.png"
+            src="/images/profile.png"
             alt="Kyronode Logo"
             width={200}
             height={200}
@@ -47,10 +47,6 @@ const AboutMe = () => {
             <h2 className="font-bold text-xl mb-2 ">Description</h2>
             <p>{description}</p>
           </div>
-          {/* garis vertikal */}
-          {/* <div className="hidden lg:flex lg:flex-col justify-start items-center h-full mx-4">
-            <div className="w-px bg-zinc-800 h-60"></div>
-          </div> */}
 
           <div className="flex flex-col ">
             <h2 className="font-bold text-xl mb-2">Skills</h2>

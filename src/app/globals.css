@@ -35,6 +35,16 @@ section {
   padding: 30px 20px;
 }
 
+/* fade transition */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Loading animation */
 
 .loading {

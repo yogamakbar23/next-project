@@ -6,14 +6,14 @@ const Hero = () => {
       className="bg-cover bg-center text-white mt-16"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/kyro header.png")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/images/background.png")',
       }}
     >
-      <div className="flex flex-col justify-center items-center text-center mx-auto px-4 lg:px-36 py-60">
+      <div className="flex flex-col justify-center items-center text-center mx-auto px-4 lg:px-36 py-52">
         {/* Heading */}
         <div className="typewriter">
           <h1 className="md:whitespace-nowrap font-bold text-6xl md:text-7xl drop-shadow-lg">
-            Wellcome to
+            Welcome to
           </h1>
           <div>
             <h1 className="write text-amber-300 dark:text-amber-500 font-bold text-6xl md:text-7xl drop-shadow-lg">
@@ -23,9 +23,16 @@ const Hero = () => {
         </div>
 
         {/* Subtitle */}
-        <p className="mt-4 text-lg md:text-xl text-zinc-300 drop-shadow-lg">
-          Supporting Decentralized Networks with Reliable Infrastructure
-        </p>
+        <div className="px-4">
+          <p className="mt-5 text-2xl md:text-4xl font-bold drop-shadow-lg">
+            Securing the Future of Decentralized Networks
+          </p>
+
+          <p className="mt-3 text-lg md:text-lg dark:text-zinc-300 drop-shadow-lg">
+            Delegate your assets securely and embrace transformative interchain
+            solutions for growth
+          </p>
+        </div>
 
         {/* CTA Buttons */}
         <div className="mt-8 flex space-x-4 ">
