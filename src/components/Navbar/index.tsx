@@ -41,18 +41,21 @@ const Navbar = () => {
     <nav className="bg-amber-300 text-black dark:bg-zinc-950 fixed top-0 left-0 w-full z-50 dark:text-white shadow-md border-b border-black dark:border-white">
       <div className="container mx-auto max-w-screen-xl px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
-        <Link href={"/"} className="flex text-3xl font-bold items-center ">
-          <div className="flex w-15 h-15 ">
+        <Link
+          href={"/"}
+          className="flex text-3xl font-bold items-center gap-4 "
+        >
+          <div className="flex w-12 h-12 my-2 rounded-full bg-white ">
             <Image
               src="/images/logo.svg"
               alt="Kyronode Logo"
-              width={60}
-              height={60}
+              width={70}
+              height={70}
               className="rounded-full"
               onLoadingComplete={handleLogoLoad}
             />
           </div>
-          {isLogoLoaded && <p className="-ml-3">yronode</p>}
+          {isLogoLoaded && <p>Kyronode</p>}
         </Link>
         {/* Links */}
         <div className="flex items-center gap-4">
@@ -60,7 +63,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/services"
-                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Services
               </Link>
@@ -68,7 +71,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/explorer"
-                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Explorer
               </Link>
@@ -76,7 +79,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#contact"
-                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+                className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Contacts
               </Link>
@@ -85,7 +88,7 @@ const Navbar = () => {
 
           <button
             onClick={toggleTheme}
-            className=" p-2 rounded-full focus:outline-none transition duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+            className=" p-2 rounded-full focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
           >
             {isDarkMode ? <SunDim size={28} /> : <Moon size={28} />}
           </button>

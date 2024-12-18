@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/effect/FadeSection"
+    "src/components/utils/FadeSection",
+    "src/components/utils/Hero"
   ],
   "exclude": ["node_modules"]
 }

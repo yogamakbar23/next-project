@@ -14,13 +14,13 @@ function Footer() {
           <div className="flex flex-col gap-1">
             <p className="font-bold">Navigation</p>
             <Link
-              className="hover:text-white dark:hover:text-amber-600"
+              className="hover:text-amber-700 dark:hover:text-amber-600"
               href={"/services"}
             >
               Services
             </Link>
             <Link
-              className="hover:text-white dark:hover:text-amber-600"
+              className="hover:text-amber-700 dark:hover:text-amber-600"
               href={"/explorer"}
             >
               Explorer
@@ -31,14 +31,14 @@ function Footer() {
               Contact Us
             </p>
             <Link
-              className="hover:text-white dark:hover:text-amber-600"
+              className="hover:text-amber-700 dark:hover:text-amber-600"
               href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
             >
               {whatsappNumber}
             </Link>
             <Link
-              className="hover:text-white dark:hover:text-amber-600"
+              className="hover:text-amber-700 dark:hover:text-amber-600"
               href={`mailto:${emailAddress}`}
               target="_blank"
             >

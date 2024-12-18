@@ -1,11 +1,10 @@
-import AboutMe from "@/components/About";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import OurServer from "@/components/OurServer";
 import Navbar from "@/components/Navbar";
 import Networks from "@/components/Networks";
 import Advantages from "@/components/Advantages";
-import FadeSection from "@/components/effect/FadeSection";
+import FadeSection from "@/components/utils/FadeSection";
 
 export default function Home() {
   return (
@@ -20,9 +19,6 @@ export default function Home() {
       </FadeSection>
       <FadeSection>
         <Networks />
-      </FadeSection>
-      <FadeSection>
-        <AboutMe />
       </FadeSection>
       <Footer />
     </div>

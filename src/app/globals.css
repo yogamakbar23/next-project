@@ -5,14 +5,16 @@
 :root {
   --background: rgb(24 24 27);
   --foreground: #ffffff;
+  --dot-color: black;
+  --hero-from: rgb(252 211 77);
+  --hero-to: rgb(244 244 245);
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+
+.dark {
+  --dot-color: rgba(255, 255, 255, 0.8);
+  --hero-from: black;
+  --hero-to: var(--background);
+}
 
 html {
   scroll-behavior: smooth;
@@ -45,8 +47,8 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
-/* Loading animation */
 
+/* Loading animation */
 .loading {
   --d: 44px;
   width: 8px;
