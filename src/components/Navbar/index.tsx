@@ -41,11 +41,8 @@ const Navbar = () => {
     <nav className="bg-amber-300 text-black dark:bg-zinc-950 fixed top-0 left-0 w-full z-50 dark:text-white shadow-md border-b border-black dark:border-white">
       <div className="container mx-auto max-w-screen-xl px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
-        <Link
-          href={"/"}
-          className="flex text-3xl font-bold items-center gap-4 "
-        >
-          <div className="flex w-12 h-12 my-2 rounded-full bg-white ">
+        <Link href={"/"} className="flex text-3xl font-bold items-center gap-4">
+          <div className="flex w-12 h-12 m-2 rounded-full bg-white ">
             <Image
               src="/images/logo.svg"
               alt="Kyronode Logo"
@@ -58,7 +55,7 @@ const Navbar = () => {
           {isLogoLoaded && <p>Kyronode</p>}
         </Link>
         {/* Links */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <ul className="hidden lg:flex space-x-4 text-xl dark:text-zinc-300">
             <li>
               <Link
@@ -88,7 +85,7 @@ const Navbar = () => {
 
           <button
             onClick={toggleTheme}
-            className=" p-2 rounded-full focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+            className="rounded-full focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
           >
             {isDarkMode ? <SunDim size={28} /> : <Moon size={28} />}
           </button>
