@@ -54,7 +54,7 @@ const Networks = () => {
           {networks.map((network) => (
             <div
               key={network.id}
-              className="flex flex-col gap-4 bg-white dark:bg-zinc-800 text-left items-start p-6 rounded-lg shadow-md transition hover:scale-105"
+              className="flex flex-col gap-4 bg-white dark:bg-zinc-800 text-left items-start p-8 rounded-lg shadow-md transition hover:scale-105"
             >
               <div className="flex items-center gap-4">
                 <Image
