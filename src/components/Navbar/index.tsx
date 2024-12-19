@@ -45,7 +45,7 @@ const Navbar = () => {
           href={"/"}
           className="flex m-2 text-3xl font-bold items-center gap-4"
         >
-          <div className="flex w-12 h-12 rounded-full bg-white ">
+          <div className="flex w-12 h-12 rounded-full bg-white dark:bg-zinc-800">
             <Image
               src="/images/logo.svg"
               alt="Kyronode Logo"
@@ -88,7 +88,7 @@ const Navbar = () => {
 
           <button
             onClick={toggleTheme}
-            className="rounded-full focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
+            className="rounded-full p-4 focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
           >
             {isDarkMode ? <SunDim size={28} /> : <Moon size={28} />}
           </button>

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="flex justify-center items-center text-center md:text-start bg-amber-300 dark:bg-zinc-950 mt-20 border-t border-black dark:border-white">
-      <div className="container container mx-auto max-w-screen-xl px-8 pt-8 pb-20 gap-4 flex flex-col md:flex-row justify-between items-center text-black dark:text-zinc-300">
+      <div className="container container mx-auto max-w-screen-xl px-4 pt-8 pb-20 gap-4 flex flex-col md:flex-row justify-between items-center text-black dark:text-zinc-300">
         {/* Copyright */}
         <p>Copyright © 2024 Kyronode. All Rights Reserved.</p>
         {/* Navigation & Contact Us */}

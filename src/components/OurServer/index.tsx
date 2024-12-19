@@ -37,7 +37,7 @@ const OurServer = () => {
       <div className="content">
         <h2 className="text-3xl font-bold">Our Server</h2>
         <div className="flex bg-zinc-500 dark:bg-zinc-300 h-px my-5"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {servers.map((server) => (
             <div
               key={server.id}
