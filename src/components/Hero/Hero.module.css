@@ -1,12 +1,3 @@
-/* :root {
-  --dot-color: rgba(0, 0, 0, 0.6); 
-}
-
-.dark {
-  --dot-color: rgba(255, 255, 255, 0.8);
-} 
-*/
-
 .hero {
   position: relative;
   width: 100%;
@@ -29,26 +20,44 @@
 
 .dot {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  background: var(--dot-color);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 50%;
-  animation: moveDown 10s linear infinite;
-  opacity: 0;
-  animation-delay: calc(-10s * var(--random-delay));
-  top: 0;
-  left: calc(var(--random-left) * 100%);
+  box-shadow: 0 0 8px var(--dot-shadow);
+  animation: twinkle var(--random-duration) ease-in-out infinite,
+    moveRandom var(--random-duration) linear infinite;
+  top: calc(var(--start-y) * 100%);
+  left: calc(var(--start-x) * 100%);
+  opacity: 1;
   z-index: 0;
+  pointer-events: none;
 }
 
-@keyframes moveDown {
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+    box-shadow: 0 0 8px var(--dot-shadow);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+    box-shadow: 0 0 12px var(--dot-shadow);
+  }
+}
+
+@keyframes moveRandom {
   0% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translate(0, 0);
   }
   100% {
-    transform: translateY(100vh);
-    opacity: 0;
+    transform: translate(
+      calc(var(--end-x) * 100vw),
+      calc(var(--end-y) * 100vh)
+    );
   }
 }
 

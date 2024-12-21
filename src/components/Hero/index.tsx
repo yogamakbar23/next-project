@@ -2,21 +2,29 @@ import React from "react";
 import Link from "next/link";
 import styles from "@/components/Hero/Hero.module.css";
 
-const Hero = () => {
-  const dots = Array.from({ length: 50 }).map((_, index) => {
-    const randomLeft = Math.random();
-    const randomDelay = Math.random();
+const Hero: React.FC = () => {
+  const dots = Array.from({ length: 15 }).map((_, index) => {
+    const startX = Math.random();
+    const startY = Math.random();
+    const endX = Math.random() - 0.5;
+    const endY = Math.random() - 0.5;
+    const randomDuration = `${Math.random() * 5 + 5}s`;
+
     return (
       <span
         key={index}
         className={styles.dot}
         style={
           {
-            "--random-left": randomLeft,
-            "--random-delay": randomDelay,
+            "--start-x": startX,
+            "--start-y": startY,
+            "--end-x": endX,
+            "--end-y": endY,
+            "--random-duration": randomDuration,
+            backgroundImage: "url(images/logo.svg)",
           } as React.CSSProperties
         }
-      ></span>
+      />
     );
   });
 
