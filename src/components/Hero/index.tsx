@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import styles from "@/components/Hero/Hero.module.css";
@@ -11,7 +12,7 @@ const Hero: React.FC = () => {
     const randomDuration = `${Math.random() * 5 + 5}s`;
 
     return (
-      <span
+      <div
         key={index}
         className={styles.dot}
         style={
@@ -21,10 +22,17 @@ const Hero: React.FC = () => {
             "--end-x": endX,
             "--end-y": endY,
             "--random-duration": randomDuration,
-            backgroundImage: "url(images/logo.svg)",
           } as React.CSSProperties
         }
-      />
+      >
+        <Image
+          src="images/logo.svg"
+          width={70}
+          height={70}
+          priority={false}
+          alt={""}
+        />
+      </div>
     );
   });
 

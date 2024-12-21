@@ -32,7 +32,6 @@
   left: calc(var(--start-x) * 100%);
   opacity: 1;
   z-index: 0;
-  pointer-events: none;
 }
 
 @keyframes twinkle {
