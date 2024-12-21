@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "@/components/Hero/Hero.module.css";
 
 const Hero: React.FC = () => {
-  const dots = Array.from({ length: 15 }).map((_, index) => {
+  const dots = Array.from({ length: 10 }).map((_, index) => {
     const startX = Math.random();
     const startY = Math.random();
     const endX = Math.random() - 0.5;
