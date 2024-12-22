@@ -1,75 +1,7 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import styles from "@/components/Hero/Hero.module.css";
-
-interface DotPosition {
-  startX: number;
-  startY: number;
-  endX: number;
-  endY: number;
-  randomDuration: string;
-}
-
-const Hero: React.FC = () => {
-  const [dotsVisible, setDotsVisible] = useState<boolean[]>(
-    Array(10).fill(true)
-  );
-
-  const [dotPositions, setDotPositions] = useState<DotPosition[]>([]);
-
-  useEffect(() => {
-    const positions = Array.from({ length: 10 }).map(() => ({
-      startX: Math.random(),
-      startY: Math.random(),
-      endX: Math.random() - 0.5,
-      endY: Math.random() - 0.5,
-      randomDuration: `${Math.random() * 5 + 5}s`,
-    }));
-    setDotPositions(positions);
-  }, []);
-
-  const handleDotClick = (index: number) => {
-    setDotsVisible((prev) => {
-      const updated = [...prev];
-      updated[index] = false;
-      return updated;
-    });
-  };
-
-  const dots = dotPositions.map((dot, index) => {
-    return (
-      dotsVisible[index] && (
-        <div
-          key={index}
-          className={styles.dot}
-          style={
-            {
-              "--start-x": dot.startX,
-              "--start-y": dot.startY,
-              "--end-x": dot.endX,
-              "--end-y": dot.endY,
-              "--random-duration": dot.randomDuration,
-            } as React.CSSProperties
-          }
-          onClick={() => handleDotClick(index)}
-        >
-          <Image
-            src="images/logo.svg"
-            width={70}
-            height={70}
-            priority={false}
-            alt=""
-          />
-        </div>
-      )
-    );
-  });
-
+import React from "react";
+const Hero = () => {
   return (
-    <section className={`bg-cover bg-center mt-16 ${styles.hero}`}>
-      <div className={styles.dotsContainer}>{dots}</div>
+    <section className={`bg-cover bg-center mt-16 `}>
       {/* Content */}
       <div className="flex flex-col justify-center items-center text-center mx-auto px-4 lg:px-36 py-52">
         <div className="typewriter">
@@ -100,7 +32,7 @@ const Hero: React.FC = () => {
           </a>
           <a
             href="/about"
-            className="px-6 py-3 bg-zinc-100 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-900 transition"
+            className="px-6 py-3 bg-zinc-300 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 transition"
           >
             Learn More
           </a>

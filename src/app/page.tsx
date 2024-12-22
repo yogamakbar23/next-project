@@ -5,11 +5,13 @@ import Navbar from "@/components/Navbar";
 import Networks from "@/components/Networks";
 import Advantages from "@/components/Advantages";
 import FadeSection from "@/components/utils/FadeSection";
+import ParticlesComponent from "@/components/utils/particles.jsx";
 
 export default function Home() {
   return (
     <div className="bg-zinc-100 text-black dark:text-white dark:bg-zinc-900">
       <Navbar />
+      <ParticlesComponent id="particles" />
       <Hero />
       <FadeSection>
         <Advantages />
@@ -20,7 +22,9 @@ export default function Home() {
       <FadeSection>
         <Networks />
       </FadeSection>
-      <Footer />
+      <FadeSection>
+        <Footer />
+      </FadeSection>
     </div>
   );
 }

@@ -32,7 +32,7 @@ export default function FadeSection({ children }: FadeSectionProps) {
   return (
     <div
       ref={domRef}
-      className={`transition-all duration-[1500ms] ease-out transform ${
+      className={`transition-all duration-[1000ms] ease-out transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >

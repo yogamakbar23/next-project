@@ -18,23 +18,24 @@ const Navbar = () => {
     setIsLogoLoaded(true);
   };
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+  const toggleTheme = (darkMode?: boolean) => {
+    const enableDark = darkMode ?? !isDarkMode; // Opsional: `darkMode` bisa digunakan jika diberikan
+    setIsDarkMode(enableDark);
+    document.documentElement.classList.toggle("dark", enableDark); // Tambah/hapus kelas `dark`
   };
 
   useEffect(() => {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setIsDarkMode(prefersDark);
-    if (prefersDark) {
-      document.documentElement.classList.add("dark");
-    }
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    // Atur tema awal berdasarkan preferensi sistem
+    toggleTheme(mediaQuery.matches);
+
+    // Event listener untuk mendeteksi perubahan sistem
+    const handleChange = (e: { matches: boolean }) => toggleTheme(e.matches);
+    mediaQuery.addEventListener("change", handleChange);
+
+    // Cleanup listener saat komponen unmount
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
@@ -87,7 +88,7 @@ const Navbar = () => {
           </ul>
 
           <button
-            onClick={toggleTheme}
+            onClick={() => toggleTheme()}
             className="rounded-full p-4 focus:outline-none transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
           >
             {isDarkMode ? <SunDim size={28} /> : <Moon size={28} />}

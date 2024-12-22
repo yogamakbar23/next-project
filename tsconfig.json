@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/utils/FadeSection",
-    "src/components/utils/Hero"
+    "src/components/utils/Hero",
+    "src/components/utils/particles.tsx"
   ],
   "exclude": ["node_modules"]
 }
