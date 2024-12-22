@@ -33,7 +33,7 @@ function Footer() {
               Explorer
             </Link>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 justify-center items-center">
             <p id="contact" className="font-bold">
               Contact Us
             </p>
