@@ -19,22 +19,19 @@ const Navbar = () => {
   };
 
   const toggleTheme = (darkMode?: boolean) => {
-    const enableDark = darkMode ?? !isDarkMode; // Opsional: `darkMode` bisa digunakan jika diberikan
+    const enableDark = darkMode ?? !isDarkMode;
     setIsDarkMode(enableDark);
-    document.documentElement.classList.toggle("dark", enableDark); // Tambah/hapus kelas `dark`
+    document.documentElement.classList.toggle("dark", enableDark);
   };
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-    // Atur tema awal berdasarkan preferensi sistem
     toggleTheme(mediaQuery.matches);
 
-    // Event listener untuk mendeteksi perubahan sistem
     const handleChange = (e: { matches: boolean }) => toggleTheme(e.matches);
     mediaQuery.addEventListener("change", handleChange);
 
-    // Cleanup listener saat komponen unmount
     return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
