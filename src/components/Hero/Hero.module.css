@@ -32,6 +32,7 @@
   left: calc(var(--start-x) * 100%);
   opacity: 1;
   z-index: 0;
+  cursor: pointer;
 }
 
 @keyframes twinkle {
@@ -42,7 +43,7 @@
     box-shadow: 0 0 8px var(--dot-shadow);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
     transform: scale(1.2);
     box-shadow: 0 0 12px var(--dot-shadow);
   }
