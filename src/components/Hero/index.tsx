@@ -11,7 +11,6 @@ const Hero: React.FC = () => {
   const [dotPositions, setDotPositions] = useState<any[]>([]);
 
   useEffect(() => {
-    // Only run on the client, generate random positions
     const positions = Array.from({ length: 10 }).map(() => ({
       startX: Math.random(),
       startY: Math.random(),
