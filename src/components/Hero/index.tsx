@@ -4,11 +4,20 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "@/components/Hero/Hero.module.css";
 
+interface DotPosition {
+  startX: number;
+  startY: number;
+  endX: number;
+  endY: number;
+  randomDuration: string;
+}
+
 const Hero: React.FC = () => {
   const [dotsVisible, setDotsVisible] = useState<boolean[]>(
     Array(10).fill(true)
   );
-  const [dotPositions, setDotPositions] = useState<any[]>([]);
+
+  const [dotPositions, setDotPositions] = useState<DotPosition[]>([]);
 
   useEffect(() => {
     const positions = Array.from({ length: 10 }).map(() => ({
