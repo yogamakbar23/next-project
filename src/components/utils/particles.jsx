@@ -8,7 +8,7 @@ import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSl
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const ParticlesComponent = (props) => {
-  const [setInit] = useState(false);
+  const [init, setInit] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -21,6 +21,7 @@ const ParticlesComponent = (props) => {
       //await loadBasic(engine);
     }).then(() => {
       setInit(true);
+      console.log(init);
     });
   }, []);
 
