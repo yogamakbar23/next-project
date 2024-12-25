@@ -36,6 +36,9 @@ const ParticlesComponent = (props) => {
           value: "",
         },
       },
+      style: {
+        position: "absolute",
+      },
       fpsLimit: 120,
       interactivity: {
         events: {

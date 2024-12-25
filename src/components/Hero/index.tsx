@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <section className={`bg-cover bg-center mt-16 `}>
+    <section className={`bg-cover bg-center mt-20 `}>
       {/* Content */}
       <div className="flex flex-col justify-center items-center text-center mx-auto px-4 lg:px-36 py-52">
         <div className="typewriter">

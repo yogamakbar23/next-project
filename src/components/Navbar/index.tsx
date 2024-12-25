@@ -43,17 +43,14 @@ const Navbar = () => {
           href={"/"}
           className="flex m-2 text-3xl font-bold items-center gap-4"
         >
-          <div className="flex w-12 h-12 rounded-full bg-white dark:bg-zinc-800">
-            <Image
-              src="/images/logo.svg"
-              alt="Kyronode Logo"
-              width={70}
-              height={70}
-              className="rounded-full"
-              onLoadingComplete={handleLogoLoad}
-            />
-          </div>
-          {isLogoLoaded && <p>Kyronode</p>}
+          <Image
+            src="/images/logo_navbar.png"
+            alt="Kyronode"
+            width={2000}
+            height={2000}
+            className="object-cover h-16 w-72 -ml-4"
+            onLoadingComplete={handleLogoLoad}
+          />
         </Link>
         {/* Links */}
         <div className="flex items-center gap-2">

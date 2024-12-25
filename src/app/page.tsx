@@ -11,8 +11,10 @@ export default function Home() {
   return (
     <div className="bg-zinc-100 text-black dark:text-white dark:bg-zinc-900">
       <Navbar />
-      <ParticlesComponent id="particles" />
-      <Hero />
+      <div className="flex relative h-screen justify-center items-center">
+        <ParticlesComponent id="particles" />
+        <Hero />
+      </div>
       <FadeSection>
         <Advantages />
       </FadeSection>
@@ -22,9 +24,7 @@ export default function Home() {
       <FadeSection>
         <Networks />
       </FadeSection>
-      <FadeSection>
-        <Footer />
-      </FadeSection>
+      <Footer />
     </div>
   );
 }
