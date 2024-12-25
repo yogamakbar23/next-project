@@ -13,7 +13,9 @@ export default function Home() {
       <Navbar />
       <div className="flex relative h-screen justify-center items-center">
         <ParticlesComponent id="particles" />
-        <Hero />
+        <FadeSection>
+          <Hero />
+        </FadeSection>
       </div>
       <FadeSection>
         <Advantages />

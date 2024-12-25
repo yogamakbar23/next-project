@@ -7,15 +7,10 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLogoLoaded, setIsLogoLoaded] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleLogoLoad = () => {
-    setIsLogoLoaded(true);
   };
 
   const toggleTheme = (darkMode?: boolean) => {
@@ -49,7 +44,6 @@ const Navbar = () => {
             width={2000}
             height={2000}
             className="object-cover h-16 w-72 -ml-4"
-            onLoadingComplete={handleLogoLoad}
           />
         </Link>
         {/* Links */}
