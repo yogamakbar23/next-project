@@ -8,7 +8,7 @@ interface FadeSectionProps {
 
 export default function FadeSection({ children }: FadeSectionProps) {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const domRef = useRef<HTMLDivElement>(null); // Ref dengan tipe <div>
+  const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -16,7 +16,7 @@ export default function FadeSection({ children }: FadeSectionProps) {
         if (entry.isIntersecting) {
           setIsVisible(true);
           if (domRef.current) {
-            observer.unobserve(domRef.current); // Stop observing
+            observer.unobserve(domRef.current);
           }
         }
       });

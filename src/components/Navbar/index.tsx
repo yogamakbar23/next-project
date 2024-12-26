@@ -59,7 +59,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/explorer"
+                href="https://testnet.kyronode.xyz/"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Explorer
@@ -108,7 +108,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/explorer"
+                href="https://testnet.kyronode.xyz/"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-300 dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Explorer

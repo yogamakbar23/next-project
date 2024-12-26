@@ -27,7 +27,7 @@ function Footer() {
             </Link>
             <Link
               className="hover:text-amber-700 dark:hover:text-amber-600"
-              href={"/explorer"}
+              href={"https://testnet.kyronode.xyz/"}
             >
               Explorer
             </Link>
