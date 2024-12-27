@@ -10,7 +10,7 @@ function Footer() {
   const githubUsername = "kyronode";
 
   return (
-    <footer className="flex justify-center items-center text-center md:text-start bg-amber-300 dark:bg-zinc-950 mt-20 border-t border-black dark:border-white">
+    <footer className="flex justify-center items-center text-center md:text-start bg-white dark:bg-zinc-950 mt-20 border-t border-black dark:border-white">
       <div className="container container mx-auto max-w-screen-xl px-4 pt-8 pb-20 gap-4 flex flex-col md:flex-row justify-between items-center text-black dark:text-zinc-300 z-10">
         {/* Copyright */}
         <p className="p-4">Copyright © 2024 Kyronode. All Rights Reserved.</p>

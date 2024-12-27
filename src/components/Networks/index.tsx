@@ -48,6 +48,9 @@ const Networks = () => {
       <div className="content">
         <h2 className="text-3xl font-bold">Networks</h2>
         <div className="flex bg-zinc-500 dark:bg-zinc-300 h-px my-5"></div>
+        <p className="mb-4 text-zinc-700 dark:text-zinc-300">
+          Total staked assets: &lt;$75.000
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5  ">
           {networks.map((network) => (
             <div
