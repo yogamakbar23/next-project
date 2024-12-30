@@ -54,7 +54,7 @@ const Networks = () => {
     },
   ];
   return (
-    <section>
+    <section id="networks" className="scroll-mt-28">
       <div className="content">
         <h2 className="text-3xl font-bold">Networks</h2>
         <div className="flex bg-zinc-500 dark:bg-zinc-300 h-px my-5"></div>

@@ -25,16 +25,16 @@ const Hero = () => {
         </div>
         <div className="z-10 mt-8 flex space-x-4">
           <a
-            href="#"
+            href="#networks"
             className="px-6 py-3 bg-amber-700 dark:bg-amber-500 text-white dark:text-black rounded-lg shadow-lg hover:bg-amber-900 dark:hover:bg-amber-600 transition"
           >
-            Get Started
+            Networks
           </a>
           <a
-            href="/about"
+            href="https://testnet.kyronode.xyz/"
             className="px-6 py-3 bg-zinc-300 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 transition"
           >
-            Learn More
+            Explorer
           </a>
         </div>
       </div>
