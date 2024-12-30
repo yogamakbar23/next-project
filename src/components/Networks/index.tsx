@@ -42,6 +42,16 @@ const Networks = () => {
       image: "/images/Networks/zenrock.png",
       name: "Zenrock",
     },
+    {
+      id: 9,
+      image: "/images/Networks/initia.jpg",
+      name: "Initia",
+    },
+    {
+      id: 10,
+      image: "/images/Networks/dill.jpg",
+      name: "Dill",
+    },
   ];
   return (
     <section>
