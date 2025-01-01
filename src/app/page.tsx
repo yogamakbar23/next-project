@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import OurServer from "@/components/OurServer";
+import Servers from "@/components/Servers";
 import Navbar from "@/components/Navbar";
 import Networks from "@/components/Networks";
 import Advantages from "@/components/Advantages";
@@ -21,7 +21,7 @@ export default function Home() {
         <Advantages />
       </FadeSection>
       <FadeSection>
-        <OurServer />
+        <Servers />
       </FadeSection>
       <FadeSection>
         <Networks />

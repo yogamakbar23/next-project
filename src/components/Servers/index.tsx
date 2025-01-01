@@ -2,7 +2,7 @@
 
 import { HardDrives } from "@phosphor-icons/react";
 
-const OurServer = () => {
+const Servers = () => {
   const servers = [
     {
       id: 1,
@@ -68,4 +68,4 @@ const OurServer = () => {
   );
 };
 
-export default OurServer;
+export default Servers;

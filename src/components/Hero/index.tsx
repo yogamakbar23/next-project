@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 const Hero = () => {
   return (
@@ -24,18 +25,18 @@ const Hero = () => {
           </p>
         </div>
         <div className="z-10 mt-8 flex space-x-4">
-          <a
+          <Link
             href="#networks"
-            className="px-6 py-3 bg-amber-700 dark:bg-amber-500 text-white dark:text-black rounded-lg shadow-lg hover:bg-amber-900 dark:hover:bg-amber-600 transition"
+            className="w-32 px-6 py-3 bg-amber-700 dark:bg-amber-500 text-white dark:text-black rounded-lg shadow-lg hover:bg-amber-900 dark:hover:bg-amber-600 transition"
           >
             Networks
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://testnet.kyronode.xyz/"
-            className="px-6 py-3 bg-zinc-300 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 transition"
+            className="w-32 px-6 py-3 bg-zinc-300 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 transition"
           >
             Explorer
-          </a>
+          </Link>
         </div>
       </div>
     </section>
