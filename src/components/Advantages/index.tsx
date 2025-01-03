@@ -19,7 +19,7 @@ const Advantages = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col gap-4 items-center">
               <ShieldCheck size={64} />
-              <h3 className=" text-xl md:max-w-[180px]">
+              <h3 className=" text-xl md:max-w-[171px]">
                 Expertise in Blockchain Security
               </h3>
               <p className="text-justify dark:text-zinc-300">
