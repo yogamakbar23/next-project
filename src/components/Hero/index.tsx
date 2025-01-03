@@ -33,6 +33,7 @@ const Hero = () => {
           </Link>
           <Link
             href="https://testnet.kyronode.xyz/"
+            target="_blank"
             className="w-32 px-6 py-3 bg-zinc-300 dark:bg-zinc-800 text-black dark:text-white rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-700 transition"
           >
             Explorer

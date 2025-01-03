@@ -101,12 +101,14 @@ const Networks = () => {
               <div className="flex flex-col sm:flex-row w-full gap-3">
                 <Link
                   href={network.services}
+                  target="_blank"
                   className="px-4 py-2 border-2 w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
                 >
-                  Service
+                  Services
                 </Link>
                 <Link
                   href={network.explorer}
+                  target="_blank"
                   className="px-4 py-2 border-2 w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
                 >
                   Explorer

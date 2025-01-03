@@ -52,6 +52,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/services"
+                target="_blank"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Services
@@ -60,6 +61,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="https://testnet.kyronode.xyz/"
+                target="_blank"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-700 hover:text-white dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Explorer
@@ -101,6 +103,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/services"
+                target="_blank"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-300 dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Services
@@ -109,6 +112,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="https://testnet.kyronode.xyz/"
+                target="_blank"
                 className="px-4 py-2 rounded-lg transition duration-300 ease-in-out hover:bg-amber-300 dark:hover:bg-amber-600 dark:hover:text-black"
               >
                 Explorer

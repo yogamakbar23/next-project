@@ -22,12 +22,14 @@ function Footer() {
             <Link
               className="hover:text-amber-700 dark:hover:text-amber-600"
               href={"/services"}
+              target="_blank"
             >
               Services
             </Link>
             <Link
               className="hover:text-amber-700 dark:hover:text-amber-600"
               href={"https://testnet.kyronode.xyz/"}
+              target="_blank"
             >
               Explorer
             </Link>
@@ -47,18 +49,21 @@ function Footer() {
               <Link
                 href={`https://t.me/${telegtamUsername}`}
                 className="hover:text-amber-700 dark:hover:text-amber-600"
+                target="_blank"
               >
                 <TelegramLogo size={28} />
               </Link>
               <Link
                 href={`https://twitter.com/${twitterUsername}`}
                 className="hover:text-amber-700 dark:hover:text-amber-600"
+                target="_blank"
               >
                 <TwitterLogo size={28} />
               </Link>
               <Link
                 href={`https://github.com/${githubUsername}`}
                 className="hover:text-amber-700 dark:hover:text-amber-600"
+                target="_blank"
               >
                 <GithubLogo size={28} />
               </Link>
