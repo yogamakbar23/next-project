@@ -43,7 +43,7 @@ const Advantages = () => {
             </div>
             <div className="flex flex-col gap-4 items-center">
               <Bridge size={64} />
-              <h3 className="text-xl">
+              <h3 className="text-xl md:max-w-[220px]">
                 Resilient Infrastructure, Maximum Protection
               </h3>
               <p className="text-justify dark:text-zinc-300">
