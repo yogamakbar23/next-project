@@ -16,10 +16,10 @@ const Advantages = () => {
             Our focus on innovation and scalability drives the long-term success
             and growth of the blockchain we support.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1.1fr] gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col gap-4 items-center">
               <ShieldCheck size={64} />
-              <h3 className=" text-xl text-lg">
+              <h3 className=" text-xl md:max-w-[180px]">
                 Expertise in Blockchain Security
               </h3>
               <p className="text-justify dark:text-zinc-300">
@@ -31,7 +31,7 @@ const Advantages = () => {
             </div>
             <div className="flex flex-col gap-4 items-center">
               <Monitor size={64} />
-              <h3 className="text-xl text-lg">
+              <h3 className="text-xl md:max-w-[220px]">
                 Continuous Monitoring and Optimization
               </h3>
               <p className="text-justify dark:text-zinc-300">
@@ -43,7 +43,7 @@ const Advantages = () => {
             </div>
             <div className="flex flex-col gap-4 items-center">
               <Bridge size={64} />
-              <h3 className="text-xl text-lg">
+              <h3 className="text-xl">
                 Resilient Infrastructure, Maximum Protection
               </h3>
               <p className="text-justify dark:text-zinc-300">

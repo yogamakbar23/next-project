@@ -103,7 +103,7 @@ const Networks = () => {
                   href={network.services}
                   className="px-4 py-2 border-2 w-full text-center rounded hover:text-white hover:bg-amber-700 dark:hover:text-black dark:hover:bg-amber-600"
                 >
-                  Services
+                  Service
                 </Link>
                 <Link
                   href={network.explorer}
