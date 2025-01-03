@@ -20,7 +20,7 @@ const Networks = () => {
     {
       id: 3,
       image: "/images/Networks/og.jpg",
-      name: "Og",
+      name: "0g",
       services: "/services",
       explorer: "https://testnet.kyronode.xyz/og",
     },
